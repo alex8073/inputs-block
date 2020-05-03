@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+.customSelect {
+    position: relative;
+    font-family: Arial, sans-serif;
+    max-width: 230px;
+    margin: 0 0 25px 25px;
+}
+
+.select {
+    display: none;
+}
+
+.itemSelected {
+    position: relative;
+    padding: 14px 10px;
+    font-size: 20px;
+    border: 2px solid #D1D6DC;
+    border-radius: 7px;
+    cursor: pointer;
+    color: #555555;
+    min-width: 230px;
+}
+
+.itemSelected .userPhoto {
+    margin: -8px 10px -5px 0;
+}
+
+.itemSelected.close:after,
+.itemSelected.open:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 0;
+    height: 0;
+}
+
+.itemSelected.close:after {
+    border: 6px solid transparent;
+    border-top-color: #000000;
+}
+
+.itemSelected.open:after {
+    border: 6px solid transparent;
+    border-bottom-color: #000000;
+}
+
+.userPhoto {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 30px;
+}
+
+.list {
+    position: absolute;
+    top: 57px;
+    border-radius: 7px;
+    max-height: 450px;
+    min-width: 230px;
+    overflow-y: auto;
+    color: #555555;
+    background-color: #fff;
+    font-size: 18px;
+    -webkit-box-shadow: 0px 1px 7px 0px #000000;
+    box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, .15);
+    z-index: 1;
+}
+
+.listHide {
+    display: none;
+}
+
+.searchField {
+    position: sticky;
+    top: 0;
+    padding: 18px 0;
+}
+
+.searchField:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url('../../assets/images/search__icon.svg') center center no-repeat;
+    background-size: cover;
+    z-index: 1;
+    top: 50%;
+    transform: translateX(8px) translateY(-50%);
+}
+
+.searchField input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 14px 0 14px 45px;
+    border-width: 2px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent;
+    color: #555555;
+    font-size: 20px;
+    outline: none;
+}
+
+.searchField input::placeholder {
+    color: #555555;
+    font-size: 20px;
+}
+
+.searchField input:focus {
+    outline: none;
+}
+
+.listItem {
+    padding: 14px 10px 14px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.listItem:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+
+

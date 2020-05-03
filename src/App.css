@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: #F4F7FA;
+    padding: 20px;
+}
+
+.title {
+    font-weight: normal;
+}
+
+.logo {
+    padding: 10px 0 25px;
+}
+
+.form {
+    background-color: #FFFFFF;
+    padding: 25px 25px 0 0;
+    border: 2px solid #D1D6DC;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.another-field {
+    padding: 14px 10px;
+    font-size: 20px;
+    border: 2px solid #D1D6DC;
+    border-radius: 7px;
+    color: #555555;
+    max-width: 230px;
+    outline: none;
+    margin: 0 0 25px 25px;
+}
+
+.another-field::placeholder {
+    color: #555555;
+    font-size: 20px;
+}
+
+.reset-button,
+.filter-button {
+    padding: 14px 25px;
+    font-size: 20px;
+    border: 2px solid #3F4D67;
+    border-radius: 7px;
+    max-width: 230px;
+    outline: none;
+    cursor: pointer;
+    margin: 0 0 25px 25px;
+}
+
+.reset-button {
+    color: #3F4D67;
+    background-color: #FFFFFF;
+}
+
+.filter-button {
+    color: #FFFFFF;
+    background-color: #3F4D67;
+
+}
