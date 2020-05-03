@@ -87,7 +87,7 @@
     content: '';
     width: 20px;
     height: 20px;
-    background: url('../../assets/images/search__icon.svg') center center no-repeat;
+    background: url('../../assets/images/search_icon.png') center center no-repeat;
     background-size: cover;
     z-index: 1;
     top: 50%;
