@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Buyers.module.css';
+import iconSearch from '../../assets/images/search_icon.png'
 
 class Buyers extends React.Component {
     constructor(props) {
@@ -75,6 +76,10 @@ class Buyers extends React.Component {
                      onMouseLeave={this.hideList}>
                     <label htmlFor="searchBuyer"
                            className={styles.searchField}>
+                        <img src={iconSearch}
+                             className={styles.iconSearch}
+                             width={25}
+                             alt=""/>
                         <input id="searchBuyer"
                                type="text"
                                autoComplete="off"
