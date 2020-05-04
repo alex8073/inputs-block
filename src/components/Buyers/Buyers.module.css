@@ -76,18 +76,6 @@
     padding: 16px 0;
 }
 
-/*.searchField:before {*/
-/*    position: absolute;*/
-/*    content: '';*/
-/*    width: 20px;*/
-/*    height: 20px;*/
-/*    background: url('../../assets/images/search_icon.png') center center no-repeat;*/
-/*    background-size: cover;*/
-/*    z-index: 1;*/
-/*    top: 50%;*/
-/*    transform: translateX(8px) translateY(-50%);*/
-/*}*/
-
 .iconSearch {
     display: inline-block;
     position: absolute;
@@ -95,7 +83,6 @@
     left: 8px;
     transform: translateY(-50%);
     z-index: 1;
-
 }
 
 .searchField input {
